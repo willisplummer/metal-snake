@@ -7,19 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3701F5B82A8402750017A8EA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701F5B72A8402750017A8EA /* GameScene.swift */; };
 		3709157B2A82A55900ECF94D /* snakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709157A2A82A55900ECF94D /* snakeApp.swift */; };
 		3709157D2A82A55900ECF94D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709157C2A82A55900ECF94D /* ContentView.swift */; };
 		3709157F2A82A55A00ECF94D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3709157E2A82A55A00ECF94D /* Assets.xcassets */; };
 		370915832A82A55A00ECF94D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370915822A82A55A00ECF94D /* Preview Assets.xcassets */; };
+		3709158A2A82A57100ECF94D /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915892A82A57100ECF94D /* GameState.swift */; };
+		3709158D2A82A69200ECF94D /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709158C2A82A69200ECF94D /* MathLibrary.swift */; };
+		370915902A82A88C00ECF94D /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709158F2A82A88C00ECF94D /* MetalView.swift */; };
+		370915922A82A8FB00ECF94D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915912A82A8FB00ECF94D /* Renderer.swift */; };
+		370915942A82ABE000ECF94D /* Vertex.metal in Sources */ = {isa = PBXBuildFile; fileRef = 370915932A82ABE000ECF94D /* Vertex.metal */; };
+		370915962A82ABED00ECF94D /* Fragment.metal in Sources */ = {isa = PBXBuildFile; fileRef = 370915952A82ABED00ECF94D /* Fragment.metal */; };
+		370915982A82B05800ECF94D /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915972A82B05800ECF94D /* Quad.swift */; };
+		3709159A2A82B21100ECF94D /* VertexDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915992A82B21100ECF94D /* VertexDescriptor.swift */; };
+		370915A22A82E2FC00ECF94D /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915A12A82E2FC00ECF94D /* InputController.swift */; };
+		370915A62A83C5E800ECF94D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370915A52A83C5E800ECF94D /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3701F5B72A8402750017A8EA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3701F5B92A840FFB0017A8EA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		370915772A82A55900ECF94D /* snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3709157A2A82A55900ECF94D /* snakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snakeApp.swift; sourceTree = "<group>"; };
 		3709157C2A82A55900ECF94D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3709157E2A82A55A00ECF94D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370915802A82A55A00ECF94D /* snake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = snake.entitlements; sourceTree = "<group>"; };
 		370915822A82A55A00ECF94D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		370915892A82A57100ECF94D /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		3709158C2A82A69200ECF94D /* MathLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		3709158F2A82A88C00ECF94D /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		370915912A82A8FB00ECF94D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		370915932A82ABE000ECF94D /* Vertex.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vertex.metal; sourceTree = "<group>"; };
+		370915952A82ABED00ECF94D /* Fragment.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fragment.metal; sourceTree = "<group>"; };
+		370915972A82B05800ECF94D /* Quad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quad.swift; sourceTree = "<group>"; };
+		370915992A82B21100ECF94D /* VertexDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexDescriptor.swift; sourceTree = "<group>"; };
+		370915A12A82E2FC00ECF94D /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		370915A52A83C5E800ECF94D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +75,22 @@
 		370915792A82A55900ECF94D /* snake */ = {
 			isa = PBXGroup;
 			children = (
+				3709158E2A82A74200ECF94D /* SwiftUIViews */,
+				3709158B2A82A67700ECF94D /* Utility */,
 				3709157A2A82A55900ECF94D /* snakeApp.swift */,
-				3709157C2A82A55900ECF94D /* ContentView.swift */,
+				370915A52A83C5E800ECF94D /* Store.swift */,
+				370915892A82A57100ECF94D /* GameState.swift */,
+				370915A12A82E2FC00ECF94D /* InputController.swift */,
 				3709157E2A82A55A00ECF94D /* Assets.xcassets */,
 				370915802A82A55A00ECF94D /* snake.entitlements */,
+				370915912A82A8FB00ECF94D /* Renderer.swift */,
+				370915992A82B21100ECF94D /* VertexDescriptor.swift */,
+				370915972A82B05800ECF94D /* Quad.swift */,
+				3701F5B72A8402750017A8EA /* GameScene.swift */,
+				370915932A82ABE000ECF94D /* Vertex.metal */,
+				370915952A82ABED00ECF94D /* Fragment.metal */,
 				370915812A82A55A00ECF94D /* Preview Content */,
+				3701F5B92A840FFB0017A8EA /* MyPlayground.playground */,
 			);
 			path = snake;
 			sourceTree = "<group>";
@@ -67,6 +101,23 @@
 				370915822A82A55A00ECF94D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3709158B2A82A67700ECF94D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3709158C2A82A69200ECF94D /* MathLibrary.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3709158E2A82A74200ECF94D /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				3709157C2A82A55900ECF94D /* ContentView.swift */,
+				3709158F2A82A88C00ECF94D /* MetalView.swift */,
+			);
+			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +190,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3709159A2A82B21100ECF94D /* VertexDescriptor.swift in Sources */,
+				3709158A2A82A57100ECF94D /* GameState.swift in Sources */,
 				3709157D2A82A55900ECF94D /* ContentView.swift in Sources */,
+				370915902A82A88C00ECF94D /* MetalView.swift in Sources */,
+				370915942A82ABE000ECF94D /* Vertex.metal in Sources */,
+				370915962A82ABED00ECF94D /* Fragment.metal in Sources */,
 				3709157B2A82A55900ECF94D /* snakeApp.swift in Sources */,
+				370915A62A83C5E800ECF94D /* Store.swift in Sources */,
+				370915982A82B05800ECF94D /* Quad.swift in Sources */,
+				370915922A82A8FB00ECF94D /* Renderer.swift in Sources */,
+				370915A22A82E2FC00ECF94D /* InputController.swift in Sources */,
+				3701F5B82A8402750017A8EA /* GameScene.swift in Sources */,
+				3709158D2A82A69200ECF94D /* MathLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

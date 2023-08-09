@@ -12,6 +12,7 @@ struct snakeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .environmentObject(GameStateStore(initial: GameState(), reducer: gameReducer))
         }
     }
 }
