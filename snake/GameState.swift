@@ -57,7 +57,7 @@ struct GameState {
   init() {
     let initialSnakePosition = [float2(0,0), float2(0, -1), float2(0,-2)]
 //    TODO: why does it cause the flicker if i generate this
-    let initialApplePosition = float2(-3, -3)
+    let initialApplePosition = getNewApplePosition(snakePosition: initialSnakePosition)
 
     direction = .up
     newDirection = .up
@@ -114,7 +114,7 @@ func gameReducer(state: GameState, action: GameAction) -> GameState {
 func makeNewHead(_ oldHeadPosition: float2, direction: Direction) -> float2 {
   var newPos = oldHeadPosition + direction.vector()
 //  TODO: pull out 10 into a const
-//  TODO: refactor
+//  TODO: refactorwhe
 //  TODO: why is this weird re 9 and 10
   if newPos.x > 9 {
     newPos.x = -10
@@ -137,9 +137,9 @@ func getNewApplePosition(snakePosition: [float2]) -> float2 {
   let y: Float = floor(Float.random(in: -10 ... 9))
   let target = float2(x, y)
 
-  if (snakePosition.contains(target)) {
-    return getNewApplePosition(snakePosition: snakePosition)
-  } else {
+  if (!snakePosition.contains(target)) {
     return target
   }
+
+  return getNewApplePosition(snakePosition: snakePosition)
 }

@@ -27,18 +27,23 @@ struct GameScene {
 
     if inputController.keysPressed.contains(.leftArrow) {
       store.dispatch(.changeDirection(.left))
+      inputController.keysPressed.remove(.leftArrow)
     }
     if inputController.keysPressed.contains(.rightArrow) {
       store.dispatch(.changeDirection(.right))
+      inputController.keysPressed.remove(.rightArrow)
     }
     if inputController.keysPressed.contains(.upArrow) {
       store.dispatch(.changeDirection(.up))
+      inputController.keysPressed.remove(.upArrow)
     }
     if inputController.keysPressed.contains(.downArrow) {
       store.dispatch(.changeDirection(.down))
+      inputController.keysPressed.remove(.rightArrow)
     }
     if inputController.keysPressed.contains(.returnOrEnter) {
       store.dispatch(.restart)
+      inputController.keysPressed.remove(.returnOrEnter)
     }
   }
 }
